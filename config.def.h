@@ -1,6 +1,15 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
+#define NUMCOLORS 4             // need at least 3
+static const char colors[NUMCOLORS][3][8] = {
+  // border   foreground background
+  { "#000033", "#dddddd", "#000033" },  // normal
+  { "#000088", "#ffffff", "#000088" },  // selected
+  { "#ff0000", "#000000", "#ffff00" },  // urgent/warning  (black on yellow)
+  { "#ff0000", "#ffffff", "#ff0000" },  // error (white on red)
+  // add more here
+};
 static const char *fonts[] = {
     "Sans:size=10.5",
     "VL Gothic:size=10.5",
